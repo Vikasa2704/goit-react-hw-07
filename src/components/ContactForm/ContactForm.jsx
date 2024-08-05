@@ -22,6 +22,7 @@ const ContactForm = () => {
 
     const handleSubmit = (values, { resetForm }) => {
         const newContact = { name: values.name, number: values.number, id: nanoid() };
+        console.log('New contact:', newContact); 
         dispatch(addContact(newContact));
         resetForm();
     };

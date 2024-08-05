@@ -20,7 +20,6 @@ export const addContact = createAsyncThunk(
   async (newContact, thunkAPI) => {
     try {
       const response = await axios.post("/contacts", newContact);
-      console.log('API Response:', response.data); // Додайте цей рядок для перевірки
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
