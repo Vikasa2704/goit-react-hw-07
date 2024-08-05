@@ -4,7 +4,7 @@ import { fetchContacts, addContact, deleteContact } from "./contactsOps";
 const contactsSlice = createSlice({
   name: "contacts",
   initialState: {
-    items: [], // Зміни тут
+    items: [], 
     loading: false,
     error: null,
   },
